@@ -14,10 +14,10 @@ plt.hist(edgmag.ravel(), bins=100)
 plt.show()
 
 thr = np.percentile(edgmag, 95)
-plt.imshow(edgmag > thr, cmap="gray")
-plt.axis("off")
+plt.imshow(edgmag>thr, cmap='gray')
+plt.axis('off')
 plt.show()
 print(edgmag.shape)
 
-edge_image = Image.fromarray(edgmag > thr)
+edge_image = Image.fromarray(edgmag>thr)
 edge_image.save('my_edges.png')
