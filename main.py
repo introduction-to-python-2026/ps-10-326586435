@@ -20,4 +20,4 @@ plt.show()
 print(edgmag.shape)
 
 edge_image = Image.fromarray(edgmag > thr)
-edge_image.save("my_edges.png")
+edge_image.save('my_edges.png')
